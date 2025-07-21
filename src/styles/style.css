@@ -1,0 +1,8 @@
+
+
+/* 中等屏幕（平板横屏） */
+@media (min-width: 768px) { }
+
+
+/* 超大屏幕（台式机） */
+@media (min-width: 1200px) { }
