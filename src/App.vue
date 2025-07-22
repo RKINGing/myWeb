@@ -10,16 +10,17 @@
       <p>当前主题: {{ isDark ? '深色' : '浅色' }}</p>
 
     </div>
+      <Footer />
+    <!-- 底部版权信息 -->
   </div>
-  <div class="bottom">
-    <h1>vue</h1>
-  </div>
+
 </template>
 
 <script setup>
 import { useDarkMode } from '@/store/toggle.js';
 import HeaderView from '@/views/HeaderView.vue';
 import { RouterView } from 'vue-router';
+import Footer from '@/views/Footer.vue';
 
 const { isDark, toggleDark } = useDarkMode();
 </script>
@@ -62,14 +63,5 @@ const { isDark, toggleDark } = useDarkMode();
   box-sizing: border-box;
 }
 
-.bottom {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  padding: 10px;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+
 </style>

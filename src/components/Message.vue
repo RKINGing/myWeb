@@ -36,11 +36,16 @@ import SocialLink from '@/components/SocialLink.vue';
 
 .card-effect {
   border-radius: 24px;
-  max-width: 600px;
-  width: 90%;
-  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(229, 231, 228, 0.6);
-  transition: all 0.3s ease;
+  padding: var(--padding-sm, 12px) var(--padding-md, 20px);
+  max-width: 100%;
+
+}
+
+/* 大屏时限制最大宽度 */
+@media (min-width: 1200px) {
+  .card-effect {
+    max-width: 600px;
+  }
 }
 
 .card-effect:hover {

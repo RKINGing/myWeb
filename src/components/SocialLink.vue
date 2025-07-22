@@ -28,7 +28,7 @@ const socialTip = ref("通过这里联系我吧");
   max-width: 460px;
   width: 100%;
   height: 42px;
-  background-color: transparent;
+  background-color: #00000040;
   border-radius: 6px;
 
 

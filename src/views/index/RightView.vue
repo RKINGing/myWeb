@@ -8,20 +8,26 @@
 import GetTime from '@/components/GetTime.vue';
 import GetWeather from '@/components/GetWeather.vue';
 </script>
+
 <style scoped>
-.time {
-   position: fixed;
-   top: 80px;
-   right: 20px;
-   bottom: auto;
-   padding: 20px;
-
-
+/* 移除原固定定位，由父组件控制布局 */
+.time, .weather {
+  position: static; /* 覆盖原 fixed */
+  padding: var(--padding-sm, 12px);
+  margin: 0 auto;
 }
 
-.weather {
-   position: fixed;
-   right: 0px;
-   bottom: 0px;
+/* 仅在大屏幕保留右侧固定效果 */
+@media (min-width: 1200px) {
+  .time {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+  }
+  .weather {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
 }
 </style>

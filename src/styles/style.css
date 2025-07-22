@@ -1,8 +1,37 @@
+/* 基础样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* 移动优先：默认适配手机 */
+/* 小型设备（手机，小于 768px） */
+@media (max-width: 767px) {
+  :root {
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --padding-xs: 8px;
+    --padding-sm: 12px;
+  }
+}
 
-/* 中等屏幕（平板横屏） */
-@media (min-width: 768px) { }
+/* 中等屏幕（平板，768px+） */
+@media (min-width: 768px) and (max-width: 1199px) {
+  :root {
+    --font-size-sm: 0.9375rem;
+    --font-size-md: 1.125rem;
+    --padding-sm: 16px;
+    --padding-md: 24px;
+  }
+}
 
-
-/* 超大屏幕（台式机） */
-@media (min-width: 1200px) { }
+/* 超大屏幕（台式机，1200px+） */
+@media (min-width: 1200px) {
+  :root {
+    --font-size-sm: 1rem;
+    --font-size-md: 1.25rem;
+    --padding-md: 32px;
+    --padding-lg: 48px;
+  }
+}

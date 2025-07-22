@@ -1,5 +1,12 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 我的个人网站开发日记
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+当前进度： 主页开发中，博客页开发中，项目页开发中， 经验页开发中
+
+### 主页
+个人头像、介绍、联系方式、
+
+日期时间显示、天气显示、
+
+底部版权信息
