@@ -62,18 +62,15 @@ onUnmounted(() => {
 .time-display {
   font-size: 3.5rem;
   font-weight: bold;
-  color: #333;
   margin-bottom: 0.5rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .date-display {
   font-size: 1.2rem;
-  color: #666;
   margin-bottom: 0.3rem;
 }
 
 .weekday-display {
   font-size: 1.2rem;
-  color: #666;
 }</style>

@@ -1,6 +1,6 @@
 <template>
-  <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" :ellipsis="false" text-color="#fff"
-    @select="handleSelect">
+  <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" :ellipsis="false"
+    text-color="{{isdark? #f0f0f0: #333333}}" @select="handleSelect">
 
     <el-menu-item index="/">主页</el-menu-item>
     <el-menu-item index="/projects">项目</el-menu-item>
@@ -76,7 +76,7 @@ watch(route, () => {
   /* 确保导航栏在最上层 */
   background-color: rgba(238, 223, 223, 0);
   /* 半透明背景 */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   /* 毛玻璃效果 */
 
 

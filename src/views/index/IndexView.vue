@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div class="index-view">
     <LeftView  />
     <RightView />
   </div>
